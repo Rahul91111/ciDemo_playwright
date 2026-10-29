@@ -9,7 +9,7 @@ export class CartPage {
 
   constructor(private readonly page: Page) {
     this.heading = page.getByText('Your Cart', { exact: true });
-    this.cartItems = page.locator('.cart_itemsssss');
+    this.cartItems = page.locator('.cart_item');
     this.cartButton = page.getByRole('button', { name: /^Cart/ });
     this.continueShoppingButton = page.getByRole('button', { name: 'Continue Shopping' });
     this.checkoutButton = page.getByRole('button', { name: 'Checkout' });
